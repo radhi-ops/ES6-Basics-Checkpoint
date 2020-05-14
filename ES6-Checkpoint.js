@@ -17,10 +17,10 @@ const getAge = (pet) => {return new Date().getFullYear() - pet.bornOn;}
 
 //  petsWithAge.push(pet);
 //  }
-let petsWithAge = pets.map(el => { el.age = getAge(el);
-            return el })
+let petsWithAge = pets.map(el => { return ({...el, age : getAge(el)})})
 
 console.log(petsWithAge);
+
 
 // var dogs = [];
 // for (var i = 0; i < pets.length; i++) {
