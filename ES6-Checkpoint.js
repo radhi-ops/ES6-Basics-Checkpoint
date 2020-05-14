@@ -29,7 +29,7 @@ console.log(petsWithAge);
 //     dogs.push(pet);
 //   }
 // }
-let dogs = pets.filter(dog => {
+let dogs = petsWithAge.filter(dog => {
         return (dog.type === "dog" ? dog : false);
 })
 console.log(dogs);
@@ -42,7 +42,7 @@ console.log(dogs);
 //   }
 // }
 
-let jasper = pets.find(n=> {
+let jasper = petsWithAge.find(n=> {
         return (n.name === "Jasper" ? n : false);
 })
-console.log("Jasper is " + jasper.age + " years old");
+console.log(`Jasper is ${jasper.age} years old`);
